@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatto</title>
+   
+    <!-- Stylesheets, scripts, and other resources go here -->
+    <link rel="stylesheet" type="text/css" href="./../css/uikit.css" />
+    <link rel="stylesheet" type="text/css" href="./../custom.css" /> 
+    <script src="./../js/uikit.js"></script>
+    <script src="./../js/uikit-icons.js"></script>
+
+<!-- Lightbox -->
+
+<script>   
+    UIkit.mixin({
+        data: {
+            delayControls: 86400000
+        }
+    }, 'lightbox');
+</script>
+
+
+</head>
+
+<body>
+
+<div class="uk-backdround-primary uk-padding-small">
+
+<div class="uk-card uk-card-default uk-card-large uk-card-body uk-box-shadow-small uk-box-shadow-hover-large uk-padding-large uk-border-rounded" style="transform: rotate(0deg);">
+
+<!-- Contatti -->
+
+<div class="uk-modal-header">
+    <h2 class="uk-text-center uk-heading-small uk-text-success" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">Prenota il tuo viaggio in India</h2>
+</div>
+
+<div class="uk-grid-divider uk-child-width-expand@s uk-padding" uk-grid>
+    <div class="uk-text-center" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <img src="./../images/rudolf.webp" class="uk-border-rounded" width="150px" />
+        <p><b>Rudolf Läßer</b> <span class="uk-visible@m">|</span> <span class="uk-hidden@m"><br></span>Contatto in Germania (Monaco)</p>
+        <span><b>Email:</b> <a href="mailto:rudolf@indienkarni.de">rudolf@indienkarni.de</a></span><br>
+        <span><b>Telefono</b> | <b>Whatsapp:</b><span class="uk-hidden@m"><br></span> +49 171 313 5313</span>
+    </div>
+
+    <div class="uk-text-center" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <img src="./../images/karnni.webp" class="uk-border-rounded" width="150px" />
+        <p><b>Karnni Singh</b> <span class="uk-visible@m">|</span> <span class="uk-hidden@m"><br></span>Direttore dell'agenzia di viaggi</p>
+        <span><b>Email:</b> <a href="mailto:info@viaggioindia.it">info@viaggioindia.it</a></span><br>
+        <span><b>Telefono</b> | <b>Whatsapp:</b><span class="uk-hidden@m"><br></span> +91 98290 11557</span>
+    </div>
+</div>
+
+<div class="uk-margin">
+    <legend class="uk-legend uk-text-center" style="color:#f15b25;">Richiedi un preventivo gratuito: Ricevi la migliore e più conveniente offerta</legend>
+</div>
+
+<form name="Viaggio India - Contatto" accept-charset="utf-8" action="https://formspree.io/f/mblrkayj" method="post">
+    <fieldset class="uk-fieldset">
+        <div class="uk-margin">
+            <label>Nome e cognome</label>
+            <input class="uk-input uk-border-rounded" type="text" name="Name" id="full-name" placeholder="Il tuo nome *" required="">
+        </div>
+        <div class="uk-margin">
+            <label>Indirizzo email</label>
+            <input class="uk-input uk-border-rounded" type="email" name="Reply to" id="email-address" placeholder="Il tuo indirizzo email *" required="">
+        </div>
+        <div class="uk-margin">
+            <label>Numero di cellulare</label>
+            <input class="uk-input uk-border-rounded" type="text" inputmode="numeric" pattern="[0-9]*" name="Phone" id="phone" placeholder="Il tuo numero di telefono *" required="">
+        </div>
+        <div class="uk-margin">
+            <label>Indirizzo</label>
+            <input class="uk-input uk-border-rounded" type="text" name="Address" id="address" placeholder="Il tuo indirizzo">
+        </div>
+        <div class="uk-margin">
+            <label>Numero di viaggiatori</label>
+            <input class="uk-input uk-border-rounded" type="number" min="1" max="50" name="Passengers" id="persons" placeholder="Numero di viaggiatori *" required="">
+        </div>
+        <div class="uk-margin">
+            <label>Data di arrivo</label>
+            <input class="uk-input uk-border-rounded" type="date" name="Arrival" id="arrival" placeholder="Data di arrivo *" required="">
+        </div>
+        <div class="uk-margin">
+            <label>Data di partenza</label>
+            <input class="uk-input uk-border-rounded" type="date" name="Departure" id="departure" placeholder="Data di partenza *" required="">
+        </div>
+        <div class="uk-margin">
+            <label>Alloggio</label>
+            <select class="uk-input uk-border-rounded" aria-invalid="false" name="Hotel Booking">
+                <option value="">Seleziona un'opzione</option>
+                <option value="3 Stars (cheap)">3 stelle (economico)</option>
+                <option value="4 Stars">4 stelle</option>
+                <option value="5 Stars">5 stelle</option>
+                <option value="Luxushotel (TAJ & OBEROI HOTELS)">Hotel di lusso (TAJ & OBEROI HOTELS)</option>
+            </select>
+        </div>
+        <div class="uk-margin">
+            <label>Noleggio auto con autista</label>
+            <select class="uk-input uk-border-rounded" aria-invalid="false" name="Car Rental">
+                <option value="">Seleziona un'opzione</option>
+                <option value="City Car">Berlina - 2 persone con autista e spazio per bagagli</option>
+                <option value="SUV">SUV - 3-4 persone con autista e spazio per bagagli</option>
+                <option value="Minibus">Minibus - 5-10 persone con autista e spazio per bagagli</option>
+            </select>
+        </div>
+        <div class="uk-margin">
+            <label>Destinazioni</label>
+            <input class="uk-input uk-border-rounded" type="text" name="Destinations" id="destinations" placeholder="Dove vuoi viaggiare?">
+        </div>
+        <div class="uk-margin">
+            <label>Budget</label>
+            <input class="uk-input uk-border-rounded" name="Budget" id="budget" placeholder="Il tuo budget">
+        </div>
+        <div class="uk-margin">
+            <label>Note</label>
+            <textarea class="uk-textarea uk-border-rounded" rows="5" name="Message" id="message" placeholder="Il tuo messaggio"></textarea>
+        </div>
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-checkbox uk-border-rounded" type="checkbox" name="Privacy" checked required> Accetto la <a href="./../privacy/index.html" target="_blank">privacy policy</a>.</label>
+            <label><input class="uk-checkbox uk-border-rounded" type="checkbox" name="Newsletter Subscription"> Vorrei iscrivermi alla mailing list.</label>
+        </div>
+    </fieldset>
+    <div class="uk-modal-footer uk-text-right">
+        <input class="uk-button uk-button-primary uk-border-pill" type="submit" value="Invia"></input>
+    </div>
+</form>
+
+<!-- Fine Contatti -->
+
+</div>
+
+</div>
+
+</body>
+</html>
